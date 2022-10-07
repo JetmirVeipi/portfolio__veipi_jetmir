@@ -36,6 +36,12 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
 h4 {
   color: #292929;
   font-size: 14px;
@@ -749,6 +755,7 @@ p {
   bottom: 20px;
 }
 
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -813,6 +820,30 @@ p {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+#portfolio .portfolio-container .container__icons{
+  top: 30px;
+  right: 5px;
+  position: absolute;
+}
+
+.video_div{
+  margin-left: -210px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width:1199px){
+  .video_div{
+    margin-left: -270px;
+  } 
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -895,11 +926,11 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid #b59e7c;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: #b59e7c;
 }
 
 .container-client {
