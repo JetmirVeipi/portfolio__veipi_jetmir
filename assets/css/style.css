@@ -1712,3 +1712,8 @@ blockquote {
     margin-right: 0;
   }
 }
+
+.ratio-16x9 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
