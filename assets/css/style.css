@@ -88,9 +88,15 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover,
+.btn:hover{
+  color: #fff !important;
+  border: 1px solid #b8a07e !important;
+  background-color: #b8a07e !important;
+}
+
 .btn:focus {
-  color: #fff;
+  color: #b8a07e;
+  border: 1px solid #b8a07e;
 }
 
 .padDiv {
@@ -508,12 +514,12 @@ p {
 
 .hero-content .list-social li {
   float: left;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .hero-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 45px;
 }
 
 /*--------------------------------------------------------------
@@ -532,9 +538,10 @@ p {
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 500;
   margin: 0;
+
 }
 
 @media (max-width: 992px) {
@@ -549,7 +556,10 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: right;
 }
 
 .breadcrumbs ol li+li {
@@ -848,7 +858,7 @@ p {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .section-header {
+/* .testimonials .section-header {
   margin-bottom: 40px;
 }
 
@@ -921,7 +931,7 @@ p {
   padding-top: 80px;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.tefluidstimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -945,12 +955,52 @@ p {
   .testimonials .testimonial-item p {
     width: 80%;
   }
-}
+} */
+
+/********* Superposition simple de texte sur une image *******/
+
+/* Conteneur principal */
+.overlay-image {
+  position: relative;
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  padding-bottom: 80px;
+ }
+
+ /* Image originale */
+ .overlay-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+ 
+ /* Overlay */
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 89%;
+  opacity: 0;
+  transition: .5s ease;
+ }
+ 
+ /* Apparition overlay sur passage souris */
+ .overlay-image:hover .hover {
+  opacity: 1;
+ }
+
+ .overlay-image .normal {
+  transition: .5s ease;
+ }
+ .overlay-image:hover .normal {
+  opacity: 0;
+ }
+
 
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
-#journal,
+/* #journal,
 #journal-blog {
   height: auto;
   width: 100%;
@@ -1007,7 +1057,7 @@ p {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Journal
@@ -1077,7 +1127,7 @@ p {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: #b8a07e;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -1113,9 +1163,9 @@ p {
 /*-----------------------------------------------------------------------------------*/
 /*  /* Single page */
 /*-----------------------------------------------------------------------------------*/
-#journal-blog {
+/* #journal-blog {
   padding-top: 140px;
-}
+} */
 
 /* main content */
 .main-content {
@@ -1138,7 +1188,7 @@ p {
   width: 100%;
 }
 
-.journal-txt h4 a {
+/* .journal-txt h4 a {
   display: block;
   font-size: 19px;
   line-height: 24px;
@@ -1151,7 +1201,7 @@ p {
 .journal-txt h4 a:hover {
   color: #b8a07e;
   transition: all 0.5s ease-in-out 0s;
-}
+} */
 
 .post-meta ul li {
   font-size: 12px;
@@ -1262,9 +1312,9 @@ blockquote {
 }
 
 #footer .socials-media ul li a {
-  font-size: 24px;
+  font-size: 35px;
   color: #999;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.8em;
   font-weight: 500;
   background: transparent;
   text-transform: uppercase;
@@ -1607,9 +1657,9 @@ blockquote {
   }
 
   /* journal */
-  #journal .journal-block .journal-info {
+  /* #journal .journal-block .journal-info {
     margin-bottom: 30px;
-  }
+  } */
 
   /* Contact */
   .contact-contact {
@@ -1716,4 +1766,10 @@ blockquote {
 .ratio-16x9 {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  #hero {
+  background-position: -73%;
+  }
 }
